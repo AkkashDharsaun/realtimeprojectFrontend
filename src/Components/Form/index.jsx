@@ -11,9 +11,9 @@ const schema = yup.object().shape({
     .required("Password is required")
     .min(8, "At least 8 characters"),
 });
-const navigate = useNavigate();
 
 const LoginForm = () => {
+const navigate = useNavigate();
   const {
     register,
     handleSubmit,
