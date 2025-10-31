@@ -60,7 +60,7 @@ const LoginForm = () => {
           Login
         </button>
         <p className="text-center text-sm mt-4"> 
-            Don't have an account? <a href="/register" className="text-blue-600 underline">Register</a>
+            Don't have an account? <a href="/https://realtimeprojectfrontend-m73v.vercel.app/register" className="text-blue-600 underline">Register</a>
         </p>    
       </form>
     </div>

@@ -9,7 +9,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Form />} />
-            <Route path="/register" element={<RegisterForm />} />
+            <Route path="/https://realtimeprojectfrontend-m73v.vercel.app/register" element={<RegisterForm />} />
           </Routes>
         </BrowserRouter>
       </div>
