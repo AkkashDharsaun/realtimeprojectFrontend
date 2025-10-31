@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 const schema = yup.object().shape({
   email: yup.string().email("Invalid email").required("Email is required"),
@@ -10,6 +11,7 @@ const schema = yup.object().shape({
     .required("Password is required")
     .min(8, "At least 8 characters"),
 });
+const navigate = useNavigate();
 
 const LoginForm = () => {
   const {
@@ -60,7 +62,7 @@ const LoginForm = () => {
           Login
         </button>
         <p className="text-center text-sm mt-4"> 
-            Don't have an account? <a href="/register" className="text-blue-600 underline">Register</a>
+            Don't have an account? <span className="text-blue-600 underline" onClick={() => navigate("/register")}>Register</span>
         </p>    
       </form>
     </div>
